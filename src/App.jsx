@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import portraitImage from './assets/portrait.jpg'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -53,13 +54,8 @@ function HomeSection() {
         </p>
       </div>
       <div className="content-right">
-        <div className="portrait-placeholder">
-          <div className="portrait-content">
-            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="80" r="40" fill="#d0d0d0"/>
-              <path d="M50 180 Q50 140 100 140 Q150 140 150 180" fill="#d0d0d0"/>
-            </svg>
-          </div>
+        <div className="portrait-container">
+          <img src={portraitImage} alt="Richard Tang" className="portrait-image" />
         </div>
       </div>
     </div>
@@ -181,7 +177,7 @@ function ContactSection() {
           </div>
           <div className="contact-item">
             <strong>LinkedIn:</strong>
-            <a href="https://linkedin.com/in/richard" target="_blank" rel="noopener noreferrer">linkedin.com/in/richard</a>
+            <a href="https://www.linkedin.com/in/richard-tang-803163320" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/richard-tang-803163320</a>
           </div>
           <div className="contact-item">
             <strong>GitHub:</strong>
