@@ -14,7 +14,6 @@ function App() {
           <a href="#projects" onClick={() => setActiveSection('projects')}>PROJECTS</a>
           <a href="#about" onClick={() => setActiveSection('about')}>ABOUT</a>
           <a href="#experience" onClick={() => setActiveSection('experience')}>EXPERIENCE</a>
-          <a href="#contact" onClick={() => setActiveSection('contact')}>CONTACT</a>
         </nav>
         <button className="contact-btn" onClick={() => setActiveSection('contact')}>CONTACT ME</button>
       </header>
